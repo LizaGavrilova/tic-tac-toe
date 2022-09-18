@@ -1,3 +1,136 @@
-h1 {
-  color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto+Condensed&display=swap');
+@import '~antd/dist/antd.css';
+
+body {
+  background-color: #e5e5e5;
+  font-family: 'Roboto Condensed', sans-serif;
+  user-select: none;
+}
+
+.wrapper {
+  max-width: 1010px;
+  min-width: 320px;
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+.header {
+  color: black;
+  font-size: 40px;  
+
+  @media screen and (max-width: 560px) {
+    font-size: 30px;
+  }
+}
+
+.form {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 560px) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
+
+.form_player {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #262626;
+  margin-right: 5px;
+  margin-left: 10px;
+  margin-top: 5px;
+
+  @media screen and (max-width: 560px) {
+    margin: 0;
+  }
+}
+
+.form_button {
+  margin-left: 10px;
+
+  @media screen and (max-width: 560px) {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.size_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.size_button {
+  width: 120px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+
+  color: #4a4a4a;
+  background: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #dfe5ec;
+
+  @media screen and (max-width: 560px) {
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+  }
+}
+
+.size_button_active {
+  width: 120px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  border: 1px solid #dfe5ec; 
+
+  cursor: pointer;
+  background: #2196f3;
+  color: white;
+
+  @media screen and (max-width: 560px) {
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+  }
+}
+
+.queue, .winner, .standoff {
+  height: 25px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: #262626;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  @media screen and (max-width: 560px) {
+    font-size: 16px;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.restart_button {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.cancel_button {
+  margin-top: 20px;
+  margin-right: 10px;
 }
