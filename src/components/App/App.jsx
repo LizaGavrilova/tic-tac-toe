@@ -93,7 +93,7 @@ export default function App() {
 
   const queueTitle = (!winner && !standoff) ? <span className='queue'>{(playerOne && playerTwo) ? `Ходит игрок ${(xIsNext) ? playerOne : playerTwo}` : ``}</span> : null;
   const winnerTitle = (winner) ? <span className='winner'>{`Победитель: ${(!xIsNext) ? playerOne : playerTwo}`}</span> : null;
-  const standoffTitle = (standoff) ? <span className='standoff'>Ничья</span> : null;
+  const standoffTitle = (!winner && standoff) ? <span className='standoff'>Ничья</span> : null;
 
   return (
     <div className='wrapper'>
